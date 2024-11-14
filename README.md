@@ -124,4 +124,38 @@ After installing Active Directory on DC-1, we will promote it to a Domain Contro
   <img width="754" alt="Screenshot 2024-11-14 at 3 15 02 PM" src="https://github.com/user-attachments/assets/3cc37fd0-108d-4d52-8d43-bcb035a31796">
 </p>
 
+**Logging into the Domain Controller as a Domain User and Creating a Domain Admin Account**
+
+After the domain controller (DC-1) has restarted, follow these steps to log in using a domain user account and create a dedicated domain administrator account.
+
+
+1. **Log into the Domain Controller as a Domain User:**
+   
+   - **Initiate RDP Connection:**
+     - Open **Remote Desktop Protocol (RDP)** on your local machine.
+     - Enter the **public IP address** of DC-1 and connect.
+   
+   - **Authenticate as a Domain User:**
+     - On the login screen, instead of using your local credentials, enter the domain user credentials.
+     - Use the format `mydomain.com\labuser` where:
+       - `mydomain.com` is your domain name.
+       - `labuser` is the domain user account you created earlier.
+     - Enter the corresponding **password** for `labuser`.
+     - Click **OK** to log in.
+
+2. **Verify Domain User Login:**
+   
+   - Upon successful login, the **Server Manager** should automatically appear.
+   - If **Server Manager** does not launch, ensure you have logged into the correct VM and are using domain credentials.
+
+<img width="437" alt="Screenshot 2024-11-14 at 3 33 44 PM" src="https://github.com/user-attachments/assets/3cc4edbf-e77d-4a2e-ad50-0195f4dfd290">
+
+
+
+<img width="1315" alt="Screenshot 2024-11-14 at 4 15 00 PM" src="https://github.com/user-attachments/assets/527b5c7c-f83f-4fa7-b6fd-9c6c980c9aa4">
+
+
+
+
+<img width="1800" alt="Screenshot 2024-11-14 at 4 11 51 PM" src="https://github.com/user-attachments/assets/6fb8e09d-75df-41cc-a2df-565149302431">
 
