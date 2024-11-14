@@ -197,5 +197,45 @@ Now that we are logged into the domain controller, we will create two Organizati
 
 <img width="434" alt="Screenshot 2024-11-14 at 4 25 22 PM" src="https://github.com/user-attachments/assets/56b9c519-0df4-4130-baf6-2209aa50e726">
 
+**Promoting a User to Domain Administrator**
+
+To ensure that Jane Doe has administrative privileges within the domain, we will add her account to the **Domain Admins** group. This process involves modifying her user properties in Active Directory.
+
+### **Steps:**
+
+1. **Open Active Directory Users and Computers:**
+   - Click the **Start** button at the bottom left corner.
+   - Type **"Active Directory Users and Computers"** in the search bar and press **Enter** to launch the application.
+
+2. **Navigate to Jane Doe’s User Account:**
+   - In the **Active Directory Users and Computers** window, locate your domain (`mydomain.com`) in the left pane.
+   - Expand the domain and navigate to the **_ADMINS** Organizational Unit (OU) where Jane Doe was created.
+   - Right-click on **Jane Doe's** user account and select **Properties** from the context menu.
+
+3. **Modify Group Membership:**
+   - In the **Jane Doe Properties** window, navigate to the **Member Of** tab.
+   - Click the **Add** button to open the **Select Groups** dialog box.
+
+4. **Add to Domain Admins Group:**
+   - In the **Select Groups** dialog, type **"Domain Admins"** into the **Enter the object names to select** field.
+   - Click **Check Names** to verify the group name. It should underline if recognized correctly.
+   - Click **OK** to add **Domain Admins** to Jane Doe’s group memberships.
+
+5. **Apply Changes:**
+   - Back in the **Member Of** tab, ensure that **Domain Admins** is now listed among Jane Doe’s groups.
+   - Click **Apply**, then **OK** to save the changes and close the properties window.
+
+6. **Verify Administrative Privileges:**
+   - Log out of the current session by clicking the **Start** button, selecting your user icon, and choosing **Sign out**.
+   - Log back into DC-1 using the domain administrator credentials:
+     - **Username:** `mydomain.com\adminuser` (replace `adminuser` with the actual admin username).
+     - **Password:** Enter the password you set for the domain admin account.
+   - Upon successful login, ensure that **Server Manager** opens automatically, confirming administrative access.
+<img width="1800" alt="Screenshot 2024-11-14 at 5 09 07 PM" src="https://github.com/user-attachments/assets/652a0006-94f1-4af5-b86a-3f030c09287c">
+
+
+<img width="408" alt="Screenshot 2024-11-14 at 5 09 15 PM" src="https://github.com/user-attachments/assets/fdf82b95-4aef-4d08-97d0-4a61b32d5729">
+
+<img width="453" alt="Screenshot 2024-11-14 at 5 09 36 PM" src="https://github.com/user-attachments/assets/a4c922dc-9208-407c-8eea-51a91ae24a02">
 
 
