@@ -239,3 +239,60 @@ To ensure that Jane Doe has administrative privileges within the domain, we will
 <img width="453" alt="Screenshot 2024-11-14 at 5 09 36 PM" src="https://github.com/user-attachments/assets/a4c922dc-9208-407c-8eea-51a91ae24a02">
 
 
+**Joining Client-1 to the Domain**
+
+Now that you are logged in as `jane_admin`, we will connect Client-1 to the domain. Follow these steps to successfully join the domain:
+
+### **Steps:**
+
+1. **Access System Settings on Client-1:**
+   - **Right-Click Start Menu:**
+     - On Client-1, right-click the **Start** button located at the bottom left corner of the screen.
+   - **Select System:**
+     - From the context menu, click on **System** to open the System settings window.
+
+2. **Initiate PC Renaming Process:**
+   - **Click "Rename this PC":**
+     - In the System settings window, locate and click on the **"Rename this PC"** option. This will open the Rename PC dialog box.
+
+3. **Change Domain Membership:**
+   - **Click Change:**
+     - In the Rename PC dialog, click the **Change** button to modify the computer's domain settings.
+   - **Enter Domain Information:**
+     - In the **Member of** section, select **Domain**.
+     - Enter the domain name **`mydomain.com`** in the provided field.
+   - **Confirm Changes:**
+     - Click **OK** to proceed with joining the domain.
+
+4. **Authenticate with Domain Credentials:**
+   - **Enter Domain User Credentials:**
+     - A prompt will appear requesting credentials. Enter the domain administrator credentials:
+       - **Username:** `mydomain.com\jane_admin`
+       - **Password:** [Enter the password for `jane_admin`]
+   - **Click OK:**
+     - After entering the credentials, click **OK** to authenticate and join the domain.
+
+5. **Complete Domain Join Process:**
+   - **Welcome Message:**
+     - Upon successful authentication, a window will display a message such as **"Welcome to mydomain.com"** confirming that the PC has joined the domain.
+   - **Restart the Computer:**
+     - You will be prompted to restart the computer to apply the changes. Click **Restart Now** to reboot Client-1.
+
+6. **Log In with Domain Credentials:**
+   - **Select Domain Account:**
+     - After the restart, at the login screen, select **Other user**.
+   - **Enter Domain Credentials:**
+     - Log in using the domain account:
+       - **Username:** `mydomain.com\jane_admin`
+       - **Password:** [Enter the password for `jane_admin`]
+   - **Access Domain Resources:**
+     - Upon successful login, you will have access to domain-controlled resources and settings, confirming that Client-1 is now part of the `mydomain.com` domain.
+    
+<img width="435" alt="Screenshot 2024-11-14 at 5 16 19 PM" src="https://github.com/user-attachments/assets/771105be-4dbe-431b-a097-5dedc915ac2d">
+
+<img width="1198" alt="Screenshot 2024-11-14 at 5 21 09 PM" src="https://github.com/user-attachments/assets/2509810f-df21-4b53-993a-3e54d3054ade">
+
+<img width="734" alt="Screenshot 2024-11-14 at 5 23 16 PM" src="https://github.com/user-attachments/assets/0df56269-ca39-4636-b898-0fa78cdb123f">
+
+<img width="295" alt="Screenshot 2024-11-14 at 5 25 40 PM" src="https://github.com/user-attachments/assets/aeefffcf-f213-4597-b3ea-cc052f448a10">
+
