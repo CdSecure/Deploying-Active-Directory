@@ -16,4 +16,11 @@ Installing active directory on the domain controller, and creating users that ca
 - Windows Server 2022
 - Windows 10 Pro (21H2)
 
+  <h2>Deployment Steps</h2>
+
+  <p>
+
+    
+  </p>
+
 
