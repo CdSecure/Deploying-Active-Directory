@@ -152,10 +152,18 @@ After the domain controller (DC-1) has restarted, follow these steps to log in u
 
 
 
+<img width="1800" alt="Screenshot 2024-11-14 at 4 11 51 PM" src="https://github.com/user-attachments/assets/6fb8e09d-75df-41cc-a2df-565149302431">
+
+<img width="1314" alt="Screenshot 2024-11-14 at 4 24 13 PM" src="https://github.com/user-attachments/assets/c912adc2-6244-4956-8efb-7503e14d3789">
+
 <img width="1315" alt="Screenshot 2024-11-14 at 4 15 00 PM" src="https://github.com/user-attachments/assets/527b5c7c-f83f-4fa7-b6fd-9c6c980c9aa4">
 
+<img width="1316" alt="Screenshot 2024-11-14 at 4 47 34 PM" src="https://github.com/user-attachments/assets/7d990a2c-25c3-4ece-a3a8-4994198488cb">
 
 
+<img width="433" alt="Screenshot 2024-11-14 at 4 24 42 PM" src="https://github.com/user-attachments/assets/a6ec5cd6-b3da-45b1-8f21-1bfe47fe8551">
 
-<img width="1800" alt="Screenshot 2024-11-14 at 4 11 51 PM" src="https://github.com/user-attachments/assets/6fb8e09d-75df-41cc-a2df-565149302431">
+<img width="434" alt="Screenshot 2024-11-14 at 4 25 22 PM" src="https://github.com/user-attachments/assets/56b9c519-0df4-4130-baf6-2209aa50e726">
+
+
 
