@@ -150,16 +150,48 @@ After the domain controller (DC-1) has restarted, follow these steps to log in u
 
 <img width="437" alt="Screenshot 2024-11-14 at 3 33 44 PM" src="https://github.com/user-attachments/assets/3cc4edbf-e77d-4a2e-ad50-0195f4dfd290">
 
+**Creating Organizational Units and a Domain User in Active Directory**
 
+Now that we are logged into the domain controller, we will create two Organizational Units (OUs): `_ADMINS` and `_EMPLOYEES`. Subsequently, we will create a domain user account within the `_ADMINS` OU.
+
+### **Steps:**
+
+1. **Open Active Directory Users and Computers:**
+   - Click the **Start** button located at the bottom left corner of the screen.
+   - In the search bar, type **"Active Directory Users and Computers"** and press **Enter** to launch the application.
+
+2. **Create Organizational Units (OUs):**
+   - In the **Active Directory Users and Computers** window, locate your domain (`mydomain.com`) in the left pane.
+   - Right-click on **mydomain.com**, select **New**, and then choose **Organizational Unit**.
+   - In the **Name** field, enter `_ADMINS`.
+   - Ensure that the **Protect container from accidental deletion** option is checked.
+   - Click **OK** to create the `_ADMINS` OU.
+   - Repeat the process to create the `_EMPLOYEES` OU:
+     - Right-click on **mydomain.com**, select **New**, and then choose **Organizational Unit**.
+     - Enter `_EMPLOYEES` as the **Name**.
+     - Click **OK**.
+
+3. **Create a User in the _ADMINS OU:**
+   - Navigate to the newly created `_ADMINS` OU by expanding **mydomain.com** and selecting `_ADMINS`.
+   - Right-click on the `_ADMINS` OU, select **New**, and then choose **User**.
+   - In the **New Object - User** dialog box, fill in the following details:
+     - **First name:** Jane
+     - **Last name:** Doe
+     - **User logon name:** jane.doe
+   - Click **Next**.
+
+4. **Set User Password and Options:**
+   - Enter a **password** for the user in both the **Password** and **Confirm password** fields.
+   - Uncheck the **User must change password at next logon** option.
+   - Check the **Password never expires** option.
+   - Click **Next**.
+   - Review the information and click **Finish** to create the user account.
 
 <img width="1800" alt="Screenshot 2024-11-14 at 4 11 51 PM" src="https://github.com/user-attachments/assets/6fb8e09d-75df-41cc-a2df-565149302431">
 
-<img width="1314" alt="Screenshot 2024-11-14 at 4 24 13 PM" src="https://github.com/user-attachments/assets/c912adc2-6244-4956-8efb-7503e14d3789">
-
-<img width="1315" alt="Screenshot 2024-11-14 at 4 15 00 PM" src="https://github.com/user-attachments/assets/527b5c7c-f83f-4fa7-b6fd-9c6c980c9aa4">
-
 <img width="1316" alt="Screenshot 2024-11-14 at 4 47 34 PM" src="https://github.com/user-attachments/assets/7d990a2c-25c3-4ece-a3a8-4994198488cb">
 
+<img width="1314" alt="Screenshot 2024-11-14 at 4 24 13 PM" src="https://github.com/user-attachments/assets/c912adc2-6244-4956-8efb-7503e14d3789">
 
 <img width="433" alt="Screenshot 2024-11-14 at 4 24 42 PM" src="https://github.com/user-attachments/assets/a6ec5cd6-b3da-45b1-8f21-1bfe47fe8551">
 
