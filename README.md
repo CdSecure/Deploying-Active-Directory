@@ -296,3 +296,48 @@ Now that you are logged in as `jane_admin`, we will connect Client-1 to the doma
 
 <img width="295" alt="Screenshot 2024-11-14 at 5 25 40 PM" src="https://github.com/user-attachments/assets/aeefffcf-f213-4597-b3ea-cc052f448a10">
 
+
+**Confirming Client-1's Domain Membership and Organizing into an Organizational Unit**
+
+In this step, we will verify that Client-1 is successfully joined to the domain managed by DC-1 and organize its computer account into a dedicated Organizational Unit (OU) for better management.
+
+### **Steps:**
+
+1. **Open Active Directory Users and Computers:**
+   
+   - On the **DC-1** domain controller, click the **Start** button at the bottom left corner.
+   - In the search bar, type **"Active Directory Users and Computers"** and press **Enter** to launch the application.
+
+2. **Navigate to the Computers Container:**
+   
+   - In the **Active Directory Users and Computers** window, locate and expand your domain (`mydomain.com`) in the left pane.
+   - Click on the **Computers** container to view all computer accounts within the domain.
+
+3. **Verify Client-1's Domain Membership:**
+   
+   - In the **Computers** container, look for **Client-1**. This confirms that Client-1 is successfully joined to the domain.
+   - If **Client-1** is not visible, ensure that the client VM was correctly joined to the domain and that it has communicated with the domain controller.
+
+4. **Create a New Organizational Unit (OU) for Clients:**
+   
+   - Right-click on your domain name (`mydomain.com`) in the left pane.
+   - Select **New** > **Organizational Unit** from the context menu.
+   - In the **Name** field, enter **_CLIENTS** (ensure the underscore is included for consistent naming conventions).
+   - Ensure the **Protect container from accidental deletion** option is checked to prevent accidental removal.
+   - Click **OK** to create the **_CLIENTS** OU.
+
+5. **Move Client-1's Computer Account to the _CLIENTS OU:**
+   
+   - Navigate back to the **Computers** container by clicking on it.
+   - Locate **Client-1** in the list of computer accounts.
+   - Click and drag **Client-1** into the newly created **_CLIENTS** OU in the left pane.
+   - Alternatively, right-click on **Client-1**, select **Move**, choose **_CLIENTS** from the list, and click **OK**.
+
+6. **Confirm the Move:**
+   
+   - Click on the **_CLIENTS** OU to ensure that **Client-1** now resides within it.
+   - This organization helps in managing client machines separately from other computer accounts, enhancing administrative efficiency.
+
+<img width="751" alt="Screenshot 2024-11-14 at 5 31 35 PM" src="https://github.com/user-attachments/assets/d293b5e3-8add-4f17-91d1-115a36326acf">
+
+<img width="724" alt="Screenshot 2024-11-14 at 5 34 23 PM" src="https://github.com/user-attachments/assets/f45b5a14-9d2b-4931-a401-018f563f935e">
