@@ -341,3 +341,7 @@ In this step, we will verify that Client-1 is successfully joined to the domain 
 <img width="751" alt="Screenshot 2024-11-14 at 5 31 35 PM" src="https://github.com/user-attachments/assets/d293b5e3-8add-4f17-91d1-115a36326acf">
 
 <img width="724" alt="Screenshot 2024-11-14 at 5 34 23 PM" src="https://github.com/user-attachments/assets/f45b5a14-9d2b-4931-a401-018f563f935e">
+
+**Summary of Network Configuration and Domain Setup**
+
+In this lab, we established a virtual network in Microsoft Azure by creating a resource group and configuring a virtual network with dedicated subnets for a Windows Server domain controller (DC-1) and a Windows 10 client machine. We installed and configured Active Directory on DC-1, promoted it to a domain controller with the domain name `mydomain.com`, and organized users into Organizational Units (_ADMINS and _EMPLOYEES). By joining Client-1 to the domain and verifying network connectivity, we ensured centralized management and seamless communication between the client and the domain controller. Additionally, we created and promoted a domain user to an administrator role. Moving forward, we will create additional user accounts using PowerShell to streamline and automate domain administration.
