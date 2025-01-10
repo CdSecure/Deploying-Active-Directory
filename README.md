@@ -22,7 +22,7 @@ Installing active directory on the domain controller, and creating users that ca
 In this lab, we will install Active Directory on our domain controller, create a domain user account, and join the domain controller using the newly created user. This setup enables us to add and manage any user we create within the domain controller, facilitating centralized user management and authentication.
   </p>
   <p>
-    **Installing Active Directory on the Domain Controller (DC-1)**
+    <b>Installing Active Directory on the Domain Controller (DC-1)</b>
 
 We will begin by installing Active Directory on our first virtual machine, designated as DC-1.
 
