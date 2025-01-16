@@ -18,11 +18,11 @@ Installing active directory on the domain controller, and creating users that ca
 
 <h2>Deployment Steps</h2>
 
-  <p>
+<p>
 In this lab, we will install Active Directory on our domain controller, create a domain user account, and join the domain controller using the newly created user. This setup enables us to add and manage any user we create within the domain controller, facilitating centralized user management and authentication.
   </p>
-  <p>
-    <b>Installing Active Directory on the Domain Controller (DC-1)</b>
+
+<b>&#9312;Installing Active Directory on the Domain Controller (DC-1)</b>
 
 We will begin by installing Active Directory on our first virtual machine, designated as DC-1.
 
@@ -74,7 +74,7 @@ We will begin by installing Active Directory on our first virtual machine, desig
     <img width="785" alt="Screenshot 2024-11-14 at 2 38 04 PM" src="https://github.com/user-attachments/assets/3ab611fa-0efb-4ce9-a6d7-db516db798cb">
   </p>
 
-**Promoting DC-1 to a Domain Controller**
+**&#9313;Promoting DC-1 to a Domain Controller**
 
 After installing Active Directory on DC-1, we will promote it to a Domain Controller by creating a new forest with the domain name `mydomain.com`.
 
@@ -124,10 +124,11 @@ After installing Active Directory on DC-1, we will promote it to a Domain Contro
   <img width="754" alt="Screenshot 2024-11-14 at 3 15 02 PM" src="https://github.com/user-attachments/assets/3cc37fd0-108d-4d52-8d43-bcb035a31796">
 </p>
 
-**Logging into the Domain Controller as a Domain User and Creating a Domain Admin Account**
+**&#9314;Logging into the Domain Controller as a Domain User and Creating a Domain Admin Account**
 
 After the domain controller (DC-1) has restarted, follow these steps to log in using a domain user account and create a dedicated domain administrator account.
 
+### **Steps:**
 
 1. **Log into the Domain Controller as a Domain User:**
    
@@ -150,7 +151,7 @@ After the domain controller (DC-1) has restarted, follow these steps to log in u
 
 <img width="437" alt="Screenshot 2024-11-14 at 3 33 44 PM" src="https://github.com/user-attachments/assets/3cc4edbf-e77d-4a2e-ad50-0195f4dfd290">
 
-**Creating Organizational Units and a Domain User in Active Directory**
+**&#9315;Creating Organizational Units and a Domain User in Active Directory**
 
 Now that we are logged into the domain controller, we will create two Organizational Units (OUs): `_ADMINS` and `_EMPLOYEES`. Subsequently, we will create a domain user account within the `_ADMINS` OU.
 
@@ -197,7 +198,7 @@ Now that we are logged into the domain controller, we will create two Organizati
 
 <img width="434" alt="Screenshot 2024-11-14 at 4 25 22 PM" src="https://github.com/user-attachments/assets/56b9c519-0df4-4130-baf6-2209aa50e726">
 
-**Promoting a User to Domain Administrator**
+**&#9316;Promoting a User to Domain Administrator**
 
 To ensure that Jane Doe has administrative privileges within the domain, we will add her account to the **Domain Admins** group. This process involves modifying her user properties in Active Directory.
 
@@ -230,7 +231,7 @@ To ensure that Jane Doe has administrative privileges within the domain, we will
    - Log back into DC-1 using the domain administrator credentials:
      - **Username:** `mydomain.com\adminuser` (replace `adminuser` with the actual admin username).
      - **Password:** Enter the password you set for the domain admin account.
-   - Upon successful login, ensure that **Server Manager** opens automatically, confirming administrative access.
+   - Upon successful login, ensure that Server Manager opens automatically, confirming administrative access.
 <img width="1800" alt="Screenshot 2024-11-14 at 5 09 07 PM" src="https://github.com/user-attachments/assets/652a0006-94f1-4af5-b86a-3f030c09287c">
 
 
@@ -239,7 +240,7 @@ To ensure that Jane Doe has administrative privileges within the domain, we will
 <img width="453" alt="Screenshot 2024-11-14 at 5 09 36 PM" src="https://github.com/user-attachments/assets/a4c922dc-9208-407c-8eea-51a91ae24a02">
 
 
-**Joining Client-1 to the Domain**
+**&#9317;Joining Client-1 to the Domain**
 
 Now that you are logged in as `jane_admin`, we will connect Client-1 to the domain. Follow these steps to successfully join the domain:
 
@@ -297,7 +298,7 @@ Now that you are logged in as `jane_admin`, we will connect Client-1 to the doma
 <img width="295" alt="Screenshot 2024-11-14 at 5 25 40 PM" src="https://github.com/user-attachments/assets/aeefffcf-f213-4597-b3ea-cc052f448a10">
 
 
-**Confirming Client-1's Domain Membership and Organizing into an Organizational Unit**
+**&#9318;Confirming Client-1's Domain Membership and Organizing into an Organizational Unit**
 
 In this step, we will verify that Client-1 is successfully joined to the domain managed by DC-1 and organize its computer account into a dedicated Organizational Unit (OU) for better management.
 
